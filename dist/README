@@ -1,0 +1,31 @@
+
+
+To run the project from the command line, 
+type the following : 
+
+java -jar "mapreduce.jar" (default : PCA with file PCA1000x1000)
+
+Make sure the lib/ folder is present.
+
+To run an example of mapreduce, type java -jar mapreduce.jar [example] [input] [[other]]
+
+example 	input 			other
+
+histogram 	small/med/large.png
+pca 		PCA100x100		100 100
+stringmatch
+wordcount	word_100MB.txt
+charcount	word_100MB.txt
+
+To run an example of threadpool, type java -jar mapreduce.jar [example]
+
+tcencryptionstringmatch
+tcfibonnacitest
+tchistogram
+tccharcount
+tccharcountforkjoin
+tcpca
+tcwordcount
+tcwordcountforkjoin
+
+To run the monitor, type java -jar mapreduce.jar monitor
